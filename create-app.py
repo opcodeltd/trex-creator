@@ -64,7 +64,7 @@ if __name__ == "__main__":
     os.chdir(args.target)
     os.mkdir(os.path.join(target_root, 'app'))
     os.mkdir(os.path.join(target_root, 'node_modules'))
-    for new_dir in ['model', 'view', 'support', 'templates', 'templates/index', 'cdn', 'cdn/less', 'cdn/js']:
+    for new_dir in ['view', 'support', 'templates', 'templates/index', 'cdn', 'cdn/less', 'cdn/js']:
         os.mkdir(os.path.join(target_root, 'app', new_dir))
 
     # Initialize git
