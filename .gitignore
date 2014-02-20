@@ -1,0 +1,12 @@
+# Virtual environment stuff
+
+/bin
+/include
+/lib
+/local
+/logs
+/share
+
+# Python stuff
+
+*.pyc
