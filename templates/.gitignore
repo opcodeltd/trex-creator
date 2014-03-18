@@ -26,3 +26,6 @@
 # Python stuff
 
 *.pyc
+
+# Trex stuff
+/.rubble_passed_tests
