@@ -3,14 +3,14 @@
 ## Installation
 
 ```
-git clone --recursive git@github.com:shoptime/{{ basename }}
+git clone --recursive git@github.com:opcode/{{ basename }}
 
 cd {{ basename }}
 
 virtualenv -p python2.7 .
 source bin/activate
 
-# TODO - CODE TO INSTALL DELS
+trex/bin/install-deps.sh -d
 
 cd app/
 cp local.ini.dist local.ini

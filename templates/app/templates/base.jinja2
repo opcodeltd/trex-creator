@@ -1,4 +1,3 @@
-{%- set trex_bootstrap_version = 3 -%}
 {%- import 'trex.jinja2' as trex with context -%}
 <!DOCTYPE html>
 <html class="{{ ' '.join(html_classes) }}{% if g.user %} user-role-{{ g.user.role }}{% endif %}" id="{{ html_id }}" data-csrf-token="{{ csrf_token() }}">
