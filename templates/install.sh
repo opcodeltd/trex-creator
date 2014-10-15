@@ -10,7 +10,7 @@ cd "$PROJECT_ROOT"
 
 for file in {,trex/}requirements.txt; do [ -f $file ] && pip install -r $file; done
 if [ "$1" == "-d" ]; then
-    pip install -r trex/dev-requirements.txt
+    pip install --use-wheel -r trex/dev-requirements.txt
 fi
 
 [ -f package.json ] || cp trex/package.json package.json
