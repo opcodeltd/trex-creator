@@ -73,6 +73,9 @@ if __name__ == "__main__":
     # Initialize python virtual environment
     subprocess.check_call(['virtualenv', '-p', 'python2.7', '.'])
 
+    activate_this = os.path.join(target_root, 'bin', 'activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+
     ## Install trex submodule
     subprocess.check_call(['git', 'submodule', 'add', 'git@github.com:shoptime/trex.git', 'trex'])
 
