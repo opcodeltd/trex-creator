@@ -1,4 +1,11 @@
 @import "../lib/bootstrap/less/bootstrap.less";
 @icon-font-path: "../lib/bootstrap/dist/fonts/";
+@import "../lib/bootstrap/less/theme.less";
 
 @import "../trex/less/form-bs3.less";
+
+// #content element needs a tabindex to be a target for the 'skip to main
+// content' link, this removes any focus styling if that link is used.
+#content:focus {
+    outline: none;
+}
